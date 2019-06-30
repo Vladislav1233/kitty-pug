@@ -1,0 +1,194 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: $background;
+    height: 100%;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $font-base;
+    color: $cl-theme-global;
+}
+
+// global
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: $cl-theme-link;
+
+    .no-touchevents &:hover,
+    .touchevents &:active {
+        color: $cl-theme-link-hover;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: normal;
+    color: $cl-theme-global;
+}
+
+
+hr {
+    position: relative;
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $cl-theme-grey;
+    height: 1px;
+    margin: 15px 0;
+    font-size: 0;
+    line-height: 0;
+    
+}
+
+ul {
+    margin: 0px;
+}
+
+ul li {
+    margin-bottom: 0px;
+    list-style: disc inside;
+}
+
+ol {
+    margin-bottom: 0px;
+}
+
+.table {
+    border: 1px solid $cl-theme-grey;
+    margin: 0;
+}
+th,
+td {
+    background: none;
+    border: 1px solid $cl-theme-grey;
+    padding: 1px;
+    text-align: left;
+}
+
+q,
+blockquote {
+    border: none;
+    margin: 0px auto;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+fieldset {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+// clear
+.clearfix {
+    position: relative;
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+    overflow: hidden;
+    height: 1px;
+    margin-top: -1px;
+    line-height: 1px;
+}
+
+
+// form
+form {
+    position: relative;
+    display: block;
+    clear: both;
+    zoom: 1;
+}
+
+label,
+.label {
+    position: relative;
+    display: block;
+    zoom: 1;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    font-weight: normal;//Сброс значения bold, идущего из битрикса
+
+}
+
+input,
+textarea,
+select {
+    position: relative;
+    display: block;
+    background: #fff;
+    border: 1px solid $cl-theme-grey;
+    box-shadow: none;
+    outline: none;
+    zoom: 1;
+    width: 100%;
+    vertical-align: top;
+    font-family: $font-base;
+    color: $cl-theme-global;
+}
+
+input[type="file"] {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+textarea {
+    height: auto;
+    resize: vertical;
+}
+
+select {
+    padding: 0;
+}
+
+// placeholder 
+::-webkit-input-placeholder {
+    opacity: 1;
+    color: $cl-theme-global;
+}
+
+:-moz-placeholder {
+    opacity: 1;
+    color: $cl-theme-global;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+    color: $cl-theme-global;
+}
+
+:-ms-input-placeholder {
+    opacity: 1;
+    color: $cl-theme-global;
+}

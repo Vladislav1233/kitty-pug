@@ -1,0 +1,48 @@
+// Theme
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    background-color: #fff;
+    // height: 100%;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+body {
+    margin: 20px;
+}
+
+a {
+    display: inline-block;
+    outline: none;
+    padding: 2px;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #333;
+    
+    &:hover {
+        color: red;
+    }
+}
+
+ul {
+    margin: 0px;
+}
+
+li {
+    margin-bottom: 1px;
+    list-style: circle;
+}
+
+@media (max-width: 1023px) {
+    a {
+        padding: 5px;
+    }
+}

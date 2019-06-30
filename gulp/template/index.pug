@@ -1,0 +1,28 @@
+//- Используем стандартный шаблон
+extends ./template/index_layout
+
+//- Модифицируем head
+block head
+    - var pageTitle = 'Страница страниц';
+
+//- Выводим контент
+block content
+    button.js-full-task(data-test="test") test All
+    button.js-full-task(data-test="openReport") openReport
+    button.js-full-task(data-test="approve") approve
+    ul
+    <% _.each(files, function(file) { %>
+        li
+            a(href="<%= file %>" id="<%= file.replace('.html', '') %>") <%= file.replace('.html', '') %>
+            button.dev.js-show-list(style="display:none" data-id="<%= file.replace('.html', '') %>" title="Список тестов") list
+            button.dev(style="display:none" title="запустить тесты для страницы backstop test") test page(dev)
+            div(style="display:none" id="<%= file.replace('.html', '') %>-list") TODO список тестов для данной страницы
+                div
+                    span  название теста
+                    button(title="backstop test") запустить тест(dev)
+                button(title="") Добавить тест
+
+    <% }); %>
+    input(type="checkbox" id="develop")
+
+

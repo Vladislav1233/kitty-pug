@@ -1,0 +1,54 @@
+/* 768 + */
+.b-container {
+    
+    &--middle {
+        width: 604px;        
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    &--filter {
+        overflow-x: visible;
+    }
+
+    &--middle {
+        width: 604px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    &--contact {
+        width: 600px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    &--share {
+        width: 600px;
+    }
+
+    &--blog {
+        width: 602px;
+        padding-bottom: 51px;
+        margin: 0 auto;
+    }
+
+    .b-product-card__top & {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .b-scope-application &,
+    .b-training-program & {
+        width: 601px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .b-title-content--map-partner & {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}

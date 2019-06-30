@@ -1,0 +1,72 @@
+/* 320 + */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    font-family: $font-base;
+    overflow-x: hidden;
+    min-width: 320px;
+    // height: 100%;
+    background: $cl-lighter-grey;
+    position: relative;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+   
+    // &.no-scroll {
+    //     overflow-y: hidden;
+    // }
+
+    // &.no-scroll,
+    // &.no-touch {
+    //     // position: fixed;
+    //     // top: 0;
+    //     // left: 0;
+    //     // right: 0;
+    //     // bottom: 0;
+    //     overflow: hidden;
+    // }
+
+    // &.no-touch {
+    //     pointer-events: none;
+    //     touch-action: none;
+
+    //     & .no-visible {
+    //         border: 1px solid green;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         overflow: hidden;
+    //         pointer-events: none;
+    //         touch-action: none;
+    //         z-index: 2;
+    //     }
+    // }
+}
+
+#overlay {
+    -webkit-overflow-scrolling: touch;
+}
+
+* {
+    outline: none;
+}
+
+input[type='submit'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.b-finish {
+    min-height: calc(100vh - 97px - 830px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}

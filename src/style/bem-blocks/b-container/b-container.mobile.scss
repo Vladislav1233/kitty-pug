@@ -1,0 +1,68 @@
+/* 320 + */
+.b-container {
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+
+    &--filter{
+        overflow-x: scroll;
+    }
+
+    &--middle {
+        padding: 0; // не убирать!!!
+    }
+
+    &--share {
+        width: 319px;
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+    
+    &--contact {
+        width: 174px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &--banner {
+        padding: 0;
+    }
+
+    &--history-slider {
+        padding: 0 25px;
+    }
+
+    &--same-goods {
+        padding-bottom: 60px;
+    }
+
+    &--relative {
+        position: relative;
+    }
+
+    &--blog {
+        padding-bottom: 34px;
+
+        &.animation {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+    }
+    
+    .b-product-card__head & {
+        display: flex;
+    }
+
+    .b-product-card__top & {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .b-title-content--product-detail & {
+        padding: 0;
+    }
+
+    .b-partner-card__content & {
+        position: relative;
+    }
+}
