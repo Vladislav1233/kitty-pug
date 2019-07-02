@@ -12,54 +12,34 @@ $double-animation: 0.6s;
 
 // Основные цвета
 $cl-transparent: transparent;
-$cl-white-transparent-07: rgba(255,255,255,0.7);
 $cl-white: #ffffff;
 $cl-black: #000000;
-$cl-gray: #a1a1a1;
-$cl-dark-grey: #737373;
-$cl-light-gray: #f3f3f3;
-$cl-pink: #d42386;
-$cl-light-pink: #ec1d91;
-$cl-dark-pink: #bd1071;
-$cl-red: #ff3900;
-$cl-dark-red: #e03b0e;
-$gainsborough: #e0e0e0;
-$pearlDarkGray: #818181;
-$smokyWhite: #F9F8F9;
+$cl-blue: #1698d9;
+$cl-light-blue: #2ea8e5;
+$cl-pink: #d91667;
+$cl-light-pink: #e62e7a;
+$cl-gray: #b3b3b3;
+$cl-dark-grey: #666666;
 
 // Colors
 // Цвета theme. Не трогать!!!
 $cl-theme-global: $cl-black;
-$cl-theme-link: $cl-black;
-$cl-theme-link-hover: $cl-gray;
+$cl-theme-link: $cl-blue;
+$cl-theme-link-hover: $cl-light-blue;
 $cl-theme-grey: $cl-gray;
 
 // Цвета текста
-$cl-font-main: $cl-black;
-$cl-font-light: $cl-gray;
-$cl-font-white: $cl-white;
+$cl-font-main: $cl-white;
+$cl-font-light: $cl-dark-grey;
 
 /* Добавлять по категориям cl-элемент
 /* $cl-button-bg: $Var */
 
 // Общий док
 $background: $cl-white;
-$main-background: $cl-light-gray;
 
 // разделитель между секция
 $hr-main: $cl-gray;
-
-// кнопки с бэком без бордера
-$button-main-back: $cl-black;
-$button-main-hover: $cl-gray;
-$button-main-active: $cl-gray;
-
-// кнопки прозрачные
-$button-transparent-back: $cl-transparent;
-$button-transparent-hover: $cl-gray;
-$button-transparent-active: $cl-gray;
-$button-bg-main: $cl-light-pink;
-$button-bg-hover:$cl-dark-pink;
 
 // ------
 // ЦВЕТА
@@ -67,6 +47,5 @@ $button-bg-hover:$cl-dark-pink;
 
 // // Alpha colors
 // // $cl-alpha: rgba(255, 255, 255, .2); // цвет + описание
-$cl-alpha-dark-cyan: rgba(23, 36, 32, .13); // белый .13
 
 // Генерируемые цвета - ниже не пишем ничего сами )
