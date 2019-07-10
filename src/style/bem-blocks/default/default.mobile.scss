@@ -1,5 +1,10 @@
 /* 320 + */
 
+html {
+    font-size: 6px;
+    color: $cl-font-main;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

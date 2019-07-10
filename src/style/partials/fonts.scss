@@ -1,11 +1,35 @@
 @font-face {
     font-family: "exo-thin";
     font-display: swap;
-    src: url("../exo-thin.eot");
-    src: url("../exo-thin.eot?#iefix") format("embedded-opentype"),
-        url("../exo-thin.woff") format("woff"),
-        url("../exo-thin.woff2") format("woff2"),
-        url("../exo-thin.ttf") format("truetype");
+    src: url("../fonts/exo-thin.eot");
+    src: url("../fonts/exo-thin.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/exo-thin.woff") format("woff"),
+        url("../fonts/exo-thin.woff2") format("woff2"),
+        url("../fonts/exo-thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "trebuchetms";
+    font-display: swap;
+    src: url("../fonts/trebuchetms.eot");
+    src: url("../fonts/trebuchetms.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/trebuchetms.woff") format("woff"),
+        url("../fonts/trebuchetms.woff2") format("woff2"),
+        url("../fonts/trebuchetms.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "trebuchetms-bold";
+    font-display: swap;
+    src: url("../fonts/trebuchetms-bold.eot");
+    src: url("../fonts/trebuchetms-bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/trebuchetms-bold.woff") format("woff"),
+        url("../fonts/trebuchetms-bold.woff2") format("woff2"),
+        url("../fonts/trebuchetms-bold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
