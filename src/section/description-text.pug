@@ -1,0 +1,8 @@
+//- creator: VD
+//- description: text for description item card
+
+mixin description-text(data)
+    +b('p').description-text&attributes(attributes)
+        if data.prefix 
+            +e('span').prefix #{data.prefix} 
+        | #{data.text}

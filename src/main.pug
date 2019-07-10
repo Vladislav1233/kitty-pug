@@ -8,6 +8,9 @@
 //- Используем стандартный шаблон Project
 extends ./template/base_layout
 
+//- Подключаем блоки
+include section/product-list.pug
+
 block variables
     - var file_name = 'main'
 
@@ -21,4 +24,52 @@ block popup
 //- Выводим content
 block content
     +b.main-page
-        +b('h1').page-title Ты сегодня покормил кота?
+        .b-container
+            +b('h1').page-title Ты сегодня покормил кота?
+            
+            +product-list([{
+                src: './images/content/cat-photo.png',
+                descriptionTitle: {
+                    text: 'Сказочное заморское яство'
+                },
+                name: 'Нямушка',
+                descritpionName: 'с фуа-гра',
+                descriptionText: [{
+                    prefix: '10',
+                    text: 'порций'
+                }, {
+                    text: 'мышь в подарок'
+                }],
+                weight: '0,5'
+            }, {
+                src: './images/content/cat-photo.png',
+                descriptionTitle: {
+                    text: 'Сказочное заморское яство'
+                },
+                name: 'Нямушка',
+                descritpionName: 'с рыбой',
+                descriptionText: [{
+                    prefix: '40',
+                    text: 'порций'
+                }, {
+                    text: '2 мыши в подарок'
+                }],
+                weight: '2'
+            }, {
+                src: './images/content/cat-photo.png',
+                descriptionTitle: {
+                    text: 'Сказочное заморское яство'
+                },
+                name: 'Нямушка',
+                descritpionName: 'с курой',
+                descriptionText: [{
+                    prefix: '100',
+                    text: 'порций'
+                }, {
+                    text: '2 мыши в подарок'
+                }, {
+                    text: 'Заказчик доволен'
+                }],
+                weight: '5'
+            }])
+            

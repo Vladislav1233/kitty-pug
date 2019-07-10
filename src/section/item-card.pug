@@ -1,0 +1,9 @@
+//- creator: VD
+//- description: template of card product.
+
+mixin item-card(src)
+    +b('article').item-card
+        +e.image-wrapper
+            +e('img')(src=src alt="Кот").image
+        
+        block

@@ -1,0 +1,45 @@
+//- creator: VD
+//- description: product list.
+
+//- Note: structure of data.
+//- [{
+//-     src: '',
+//-     descriptionTitle: {
+//-         text: ''
+//-     }
+//-     name: '',
+//-     descritpionName: '',
+//-     descriptionText: [{
+//-         prefix: '', - optional
+//-         text: ''
+//-     }],
+//-     weight: ''
+//- }]
+
+//- Подключаем блоки
+include ./description-text.pug
+include ./item-card.pug
+include ./weight-label.pug
+
+mixin product-list(data)
+    +b('ul').product-list
+        each item in data
+            +e.item
+                +item-card(item.src)
+                    +e.information
+                        +description-text({
+                            text: item.descriptionTitle.text
+                        })(class="--large")
+
+                        +e('h2').name
+                            | #{item.name}
+                            span #{item.descritpionName}
+                        
+                        each description in item.descriptionText
+                            +description-text({
+                                prefix: description.prefix,
+                                text: description.text
+                            })
+
+                        +e.weight
+                            +weight-label(item.weight)

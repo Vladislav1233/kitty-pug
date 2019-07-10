@@ -21,6 +21,7 @@ $cl-light-blue: #2ea8e5;
 $cl-pink: #d91667;
 $cl-light-pink: #e62e7a;
 $cl-gray: #b3b3b3;
+$cl-light-gray: #f2f2f2;
 $cl-dark-grey: #666666;
 
 // Colors
@@ -36,9 +37,8 @@ $cl-font-light: $cl-dark-grey;
 
 /* Добавлять по категориям cl-элемент
 /* $cl-button-bg: $Var */
-
-// Общий док
 $background: $cl-white;
+$cl-description-text: $cl-dark-grey;
 
 // разделитель между секция
 $hr-main: $cl-gray;

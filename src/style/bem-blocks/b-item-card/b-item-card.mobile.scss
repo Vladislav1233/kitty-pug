@@ -1,0 +1,31 @@
+/* 320++  */
+.b-item-card {
+    border: 4px solid $cl-blue;
+    border-radius: 10px;
+    background-color: $cl-light-gray;
+    position: relative;
+    min-height: 48rem;
+    overflow: hidden;
+
+    &__name {
+        font-family: $font-base-bold;
+        font-size: 4.8rem;
+        line-height: 1;
+
+        span {
+            font-size: 2.4rem;
+            display: block;
+        }
+    }
+
+    &__image-wrapper {
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+    }
+
+    &__information {
+        position: relative;
+        z-index: 1;
+    }
+}
