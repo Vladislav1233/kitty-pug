@@ -1,5 +1,5 @@
 /* 320++  */
-$weight-label-size: 80px;
+$weight-label-size: 8rem;
 
 .b-weight-label {
     width: $weight-label-size;
@@ -13,6 +13,15 @@ $weight-label-size: 80px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: background-color $animation-time;
+
+    &--selected {
+        background-color: $cl-pink;
+    }
+
+    &--disabled {
+        background-color: $cl-gray;
+    }
 
     &__value {
         font-size: 4.2rem;

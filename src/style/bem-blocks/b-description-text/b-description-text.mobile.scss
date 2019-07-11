@@ -3,6 +3,7 @@
     font-size: 1.4rem;
     line-height: 1.2;
     color: $cl-description-text;
+    margin: 0;
 
     &--large {
         font-size: 1.6rem;
@@ -10,5 +11,9 @@
 
     &__prefix {
         font-family: $font-base-bold;
+    }
+
+    .b-item-card--disabled & {
+        color: $cl-disabled-style;
     }
 }

@@ -20,6 +20,8 @@
 include ./description-text.pug
 include ./item-card.pug
 include ./weight-label.pug
+include ./about-buy.pug
+include ./ui-kit/link.pug
 
 mixin product-list(data)
     +b('ul').product-list
@@ -43,3 +45,7 @@ mixin product-list(data)
 
                         +e.weight
                             +weight-label(item.weight)
+                
+                +about-buy()
+                    | Чего сидишь? Порадуй котэ,  
+                    +link('купи.', 'купи')

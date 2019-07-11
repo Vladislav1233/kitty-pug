@@ -1,1 +1,9 @@
 /* 1024++  */
+.b-product-list {
+    margin: 0px -40px;
+
+    &__item {
+        padding: 0px 40px;
+        max-width: 400px;
+    }
+}

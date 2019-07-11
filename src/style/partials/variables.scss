@@ -39,6 +39,7 @@ $cl-font-light: $cl-dark-grey;
 /* $cl-button-bg: $Var */
 $background: $cl-white;
 $cl-description-text: $cl-dark-grey;
+$cl-disabled-style: transparentize($cl-gray, 0.5);
 
 // разделитель между секция
 $hr-main: $cl-gray;
