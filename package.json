@@ -87,7 +87,7 @@
     "path": "^0.12.7",
     "pngquant-bin": "^3.1.1",
     "pngsmith": "^0.1.5",
-    "pug": "^2.0.0-rc.1",
+    "pug": "^3.0.1",
     "reflect-metadata": "0.1.2",
     "require-dir-all": "^0.4.9",
     "rimraf": "^2.4.3",
